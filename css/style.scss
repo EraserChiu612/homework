@@ -1,0 +1,110 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    font-family: "思源黑體", serif;
+}
+
+body {
+    header {
+        display: flex;
+        background-image: linear-gradient(to right, rgb(128, 11, 141), rgb(239, 114, 31));
+        align-items: flex-end;
+        justify-content: space-between;
+        width: 100vw;
+        // position: fixed;
+        // z-index: 100;
+
+        h1 {
+            color: white;
+            padding: 20px 50px;
+            font-weight: bolder;
+            font-size: 3rem;
+            white-space: nowrap;
+        }
+        ul {
+            display: flex;
+            justify-content: flex-end;
+            list-style: none;
+            align-items: center;
+            width: 300px;
+            height: 30px;
+            margin-right: 30px;
+        }
+        li {
+            padding: 0 15px;
+        }
+        a {
+            color: white;
+            text-decoration: none;
+            font-size: 20px;
+            &:hover {
+                font-size: 25px;
+                color: rgb(185, 15, 247);
+            }
+        }
+    }
+    article {
+        // position: absolute;
+        top: 108px;
+        display: flex;
+
+        section {
+            text-align: center;
+            h3 {
+                padding: 1rem;
+                font-size: 2rem;
+            }
+            img {
+                width: 600px;
+                height: 400px;
+            }
+            p {
+                margin: 40px 40px;
+            }
+            iframe {
+                width: 600px;
+                height: 400px;
+            }
+        }
+
+        aside {
+            background: #8021ed42;
+            /* opacity: 0.5; */
+            background-image: radial-gradient(#ed894b81 2px, #8021ed83 2px);
+            background-size: 40px 40px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            h3 {
+                height: 100px;
+                padding-top: 40px;
+                font-size: x-large;
+                color: black;
+            }
+            ul {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                list-style: none;
+                height: 100px;
+                width: 200px;
+                padding-left: 0;
+                li {
+                    padding: 5px;
+                    color: black;
+                }
+            }
+        }
+    }
+    footer {
+        background-color: greenyellow;
+        height: 50px;
+    }
+}
+
+@media (max-width: 800px) {
+    aside {
+        display: none;
+    }
+}

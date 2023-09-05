@@ -21,14 +21,14 @@ header h1 {
     padding: 20px 50px;
     font-weight: bolder;
     font-size: 3rem;
-    min-width: 550px;
+    white-space: nowrap;
 
 }
 
 
 
 
-ul {
+header ul {
     display: flex;
     justify-content: flex-end;
     list-style: none;
@@ -39,7 +39,7 @@ ul {
 
 }
 
-li {
+header li {
     padding: 0 15px;
 
 }
@@ -50,8 +50,10 @@ header a {
     font-size: 20px;
 }
 
+
 header a:hover {
     font-size: 25px;
+    color: rgb(185, 15, 247);
 }
 
 
@@ -79,9 +81,9 @@ iframe {
 }
 
 aside {
-    background: #8021ed;
+    background: #8021ed82;
     /* opacity: 0.5; */
-    background-image: radial-gradient(#ed8a4b 2px, #8021ed 2px);
+    background-image: radial-gradient(#ed894b81 2px, #8021ed83 2px);
     background-size: 40px 40px;
     display: flex;
     flex-direction: column;
@@ -105,6 +107,7 @@ aside ul {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    list-style: none;
     height: 100px;
     width: 200px;
 
@@ -116,7 +119,7 @@ aside ul li {
 
 }
 
-@media (max-width:700px) {
+@media (max-width:800px) {
     aside {
         display: none;
     }
