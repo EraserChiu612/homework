@@ -11,7 +11,8 @@ body {
         align-items: flex-end;
         justify-content: space-between;
         width: 100vw;
-        // position: fixed;
+        position: fixed;
+        top: 0;
         // z-index: 100;
 
         h1 {
@@ -19,7 +20,7 @@ body {
             padding: 20px 50px;
             font-weight: bolder;
             font-size: 3rem;
-            white-space: nowrap;
+            white-space: nowrap; //空格不換行
         }
         ul {
             display: flex;
@@ -39,13 +40,13 @@ body {
             font-size: 20px;
             &:hover {
                 font-size: 25px;
-                color: rgb(185, 15, 247);
+                text-shadow: 0.5em 0.1em 0.05em #333;
             }
         }
     }
     article {
         // position: absolute;
-        top: 108px;
+        margin-top: 110px;
         display: flex;
 
         section {
@@ -57,9 +58,11 @@ body {
             img {
                 width: 600px;
                 height: 400px;
+                border-radius: 20px;
             }
             p {
                 margin: 40px 40px;
+                line-height: 1.7;
             }
             iframe {
                 width: 600px;
@@ -98,13 +101,15 @@ body {
         }
     }
     footer {
+        margin-top: 100px;
         background-color: greenyellow;
         height: 50px;
+        padding: 15px 0 15px 30px;
     }
 }
 
 @media (max-width: 800px) {
-    aside {
+    .right-bar {
         display: none;
     }
 }
